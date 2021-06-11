@@ -110,7 +110,11 @@ def three(input):
 
 
 def four(input):
-    return False
+	for index, letter in enumerate(input):
+		#if string contains "cie" rule is false
+		if letter.lower() == 'c' and input[index+1]=='i' and input[index+2] == 'e': return False
+		elif letter.lower() == 'e' and index!=len(input)-1  and input[index+1] =='i'and input[index-1] != 'c': return False
+	return True
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
