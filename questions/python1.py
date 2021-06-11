@@ -156,8 +156,10 @@ def five(input):
 
 	# How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
  
-def six(string, int, char):
-	return False
+def six(string, int_, char):
+	string = string.replace(' ','').lower()
+	if int_> len(string): return False
+	else: return string[int_-1]==char
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
