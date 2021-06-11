@@ -241,6 +241,9 @@ def eight(arg1):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def nine(input):
+	string = input.lower()
+	string = string.rsplit("bert")
+	if len(string)>2: return string[1]
 	return ""
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
