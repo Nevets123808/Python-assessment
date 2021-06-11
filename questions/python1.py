@@ -274,7 +274,11 @@ def nine(input):
 	# help(str) and help(list), you might also need to use a function that can create a list of numbers for you, try help(range).
 
 def ten(input):
-	return []
+	input = input.rsplit(',')
+	table = [input[index:index+4] for index in range(0,len(input),4)]
+	#as a dict has to have unique keys, if we convert a list to the keys of a dict and then back to a list, the resulting list has no duplicates
+	#but is there a better way?
+	return list(dict.fromkeys([item[0] for item in table if item[2]=="False"]))
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
