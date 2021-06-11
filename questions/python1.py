@@ -182,6 +182,9 @@ def six(string, int_, char):
 	# Take a look at the documentation for Strings, List and range.
 
 def seven(inputString, char):
+	string = inputString.replace(' ','')
+	if char in string:
+		return string.index(char)+1
 	return -1
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
