@@ -212,7 +212,9 @@ def seven(inputString, char):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def eight(arg1):
-	return 0
+	#nums = sum of the digits for each separated number
+	nums = [sum([int(digit) for digit in number]) for number in arg1.rsplit(sep=" ")]
+	return max(nums)
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
